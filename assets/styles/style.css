@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-image: url('../images/treasure_background.jpg');
+  background-size: cover;
+}
+
+div.welcome-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #4e2716;
+  opacity: 0.95;
+}
+
+div.welcome-screen .logo {
+  text-align: center;
+  color: #d9b276;
+  text-decoration: none;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.start-game {
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #86560d;
+  color: #d9b276;
+  border: 1px solid #d9b276;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px 0;
+  transition: 0.25s;
+}
+
+.start-game:hover {
+  background-color: #573605;
+}
+
+div.walkthrough {
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #4e2716;
+  opacity: 0.95;
+  font-size: 30px;
+  color: #d9b276;
+}
+
+.instructions-btn {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #86560d;
+  color: #d9b276;
+  border: 1px solid #d9b276;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  transition: 0.25s;
+}
+
+.instructions-btn:hover {
+  background-color: #573605;
+}
+
+div.game-container {
+  width: 1000px;
+  height: 600px;
+  background: #ccc;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  border: 5px solid #f8dea1;
+}
+
+div.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  background: #803312;
+}
+
+div.sidebar-box {
+  margin: 30px 30px 0 30px;
+  background: #d9b276;
+  order: 5;
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  color: #4d2615;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #4d2615;
+}
+
+div.sidebar-box:last-child {
+  margin-bottom: 30px;
+}
+
+div.info, div.success, div.failed {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  margin-left: -200px;
+  width: 400px;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+div.info {
+  background-color: #a5742a;
+}
+
+div.success {
+  background-color: #008000;
+}
+
+div.failed {
+  background-color: #ff0000;
+}
+
+button.info-button, button.next-level, button.repeat-level {
+  padding: 10px;
+  margin: 10px;
+}
+
+div.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  width: 70%;
+}
+
+div.grid-item {
+  border: 1px solid #6d5401;
+  background: url('../images/grid-item.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}

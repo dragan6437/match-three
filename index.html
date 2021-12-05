@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Match Three</title>
+</head>
+
+<body>
+  <!-- Welcome Screen -->
+  <div class="welcome-screen">
+    <span class="logo">MATCH THREE</span>
+    <a class="start-game" href="#" onclick="startGame()">START GAME</a>
+    <a class="instructions-btn" href="#">Read instructions</a>
+  </div>
+
+  <!-- Walkthrough -->
+  <div class="walkthrough">
+    <h3>Walktrough</h3>
+    <ul>
+      <li>There are 3 level</li>
+      <li>Your goal is to collect certain number of items</li>
+      <li>On each level you have limited number of moves</li>
+      <li>For each item collected you get 50 points</li>
+    </ul>
+    <a class="start-game" href="#" onclick="startGame()">START GAME</a>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-box moves">
+        <p>moves remaining</p>
+        <p id="moves-remaining"></p>
+      </div>
+      <div class="sidebar-box items">
+        </p>items remaining</p>
+        <p id="items-remaining"></p>
+      </div>
+      <div class="sidebar-box points">
+        <p>points</p>
+        <p id="points"></p>
+      </div>
+      <div class="sidebar-box points">
+        <p>special items</p>
+        <p id="special-items"></p>
+      </div>
+    </div>
+    <!-- Popup Messages -->
+    <div class="info">
+      <h3>Level Info</h3>
+      <p class="info-message"></p>
+      <button class="info-button" onclick="hideMessage()">I understand</button>
+    </div>
+
+    <div class="success">
+      <h3></h3>
+      <button class="next-level">Go to next level</button>
+    </div>
+
+    <div class="failed">
+      <h3></h3>
+      <button class="repeat-level">Try again</button>
+    </div>
+    <!-- Grid -->
+    <div class="grid"></div>
+  </div>
+
+  </div>
+
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/MarchThree.js"></script>
+</body>
+
+</html>
